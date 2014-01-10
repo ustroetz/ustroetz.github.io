@@ -74,6 +74,8 @@
 	
 	<ul id='grid'></ul>
 	<ul id='osm'></ul>
+	<ul id='newroad'></ul>
+	
 	
 	
 	
@@ -121,6 +123,7 @@ var uistands = document.getElementById('stands');
 var uislope = document.getElementById('slope');
 var uigrid = document.getElementById('grid');
 var uiosm = document.getElementById('osm');
+var uinewRoad = document.getElementById('newroad');
 
 
 
@@ -157,9 +160,12 @@ var roadLayer7 = L.geoJson(road7, {style: {"color": "#545454","weight": 5,opacit
 var roadLayer8 = L.geoJson(road8, {style: {"color": "#545454","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}});
 var roadLayer9 = L.geoJson(road9, {style: {"color": "#545454","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}});
 var roadLayer10 = L.geoJson(road10, {style: {"color": "#545454","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}});
-var roadLayer11 = L.geoJson(road11, {style: {"color": "#000000","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}});
+var roadLayer11 = L.geoJson(road11, {style: {"color": "#545454","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}});
+var roadLayer12 = L.geoJson(road11, {style: {"color": "#545454","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}});
 
 AddOSM(L.geoJson(osmroads, {style: {"color": "#545454","weight": 5,opacity: 1, fillColor: "#FFFFFF",fillOpacity: 0.6}}), '3. Download OSM streets', 1); 
+
+AddnewRoad(roadLayer12, 'Final Road', 1); 
 
 AddSlopeLayer(L.mapbox.tileLayer('tmcw.map-7s15q36b'), 'Slope', 1); 
 addLayer(L.mapbox.tileLayer('tmcw.map-j5fsp01s'), 'Satellite', 1); 
@@ -608,7 +614,37 @@ function AddBufferLayer12(layer, name, zIndex) {
     item.appendChild(link);
     uibuffer12.appendChild(item);
 };
+function AddnewRoad(layer, name, zIndex) {
+    layer
+        .setZIndex(zIndex)
+        .addTo(map);
 
+    // Create a simple layer switcher that toggles layers on
+    // and off.
+    var item = document.createElement('li');
+    var link = document.createElement('a');
+
+    link.href = '#';
+    link.className = 'active';
+    link.innerHTML = name;
+
+    link.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (map.hasLayer(layer)) {
+            map.removeLayer(layer);
+            this.className = '';
+        } else {
+            map.addLayer(layer);
+			map.removeLayer(gridLayer);
+            this.className = 'active';
+        }
+    };
+
+    item.appendChild(link);
+    uinewRoad.appendChild(item);
+};
 function AddOSM(layer, name, zIndex) {
     layer
         .setZIndex(zIndex)
