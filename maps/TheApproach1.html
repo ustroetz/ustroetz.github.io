@@ -637,7 +637,17 @@ function AddnewRoad(layer, name, zIndex) {
             this.className = '';
         } else {
             map.addLayer(layer);
-			map.removeLayer(gridLayer);
+			map.removeLayer(roadLayer11);
+			map.removeLayer(roadLayer10);
+			map.removeLayer(roadLayer9);
+			map.removeLayer(roadLayer8);
+			map.removeLayer(roadLayer7);
+			map.removeLayer(roadLayer6);
+			map.removeLayer(roadLayer5);
+			map.removeLayer(roadLayer4);
+			map.removeLayer(roadLayer3);
+			map.removeLayer(roadLayer2);
+			map.removeLayer(roadLayer1);			
             this.className = 'active';
         }
     };
