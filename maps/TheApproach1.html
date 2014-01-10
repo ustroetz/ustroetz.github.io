@@ -275,6 +275,8 @@ function AddBufferLayer2(layer, name, zIndex) {
         } else {
             map.addLayer(layer);
 			map.removeLayer(bufferLayer1);
+			map.removeLayer(bufferLayer);
+			map.removeLayer(gridLayer);
 			map.addLayer(roadLayer1);
             this.className = 'active';
         }
