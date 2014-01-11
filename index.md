@@ -6,6 +6,6 @@ published: true
 <h1 class="title">ULI STR&#214;TZ</h1>
 <p class="sub-title">A collection of realized projects</p>
 
-<h2 class='post-title' href="http://ustroetz.github.io/CostModel/brownbag.pptx">Forest Cost Model</h2>
+<a class='post-title' href="http://ustroetz.github.io/CostModel/brownbag.pptx">Forest Cost Model</a>
 A Project for [Ecotrust's Forest Planner](http://stage.forestplanner.ecotrust.org).
 [GitHub](https://github.com/ustroetz/cost_model)
