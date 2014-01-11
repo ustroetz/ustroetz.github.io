@@ -8,9 +8,10 @@ published: true
 
 ## This is a collection of realized projects
 
-- Forest Cost Model ([GitHub](https://github.com/ustroetz/cost_model)/[Presentation](http://ustroetz.github.io/CostModel/brownbag.pptx))
-<sub>A Project for Ecotrust's Forest Planner ([GitHub](https://github.com/Ecotrust/landownertools) | [Website](http://stage.forestplanner.ecotrust.org))</sub>
-- Forest Logging Road Model (Project for Ecotrust) :: A Project for Ecotrust's Forest Planner ([GitHub](https://github.com/Ecotrust/land_owner_tools) | [Website](http://stage.forestplanner.ecotrust.org))
-
-- Bike Garage ([GitHub](https://github.com/ustroetz/log-road) | [Presentation](http://ustroetz.github.io/LogRoad)) :: A Project with [MaptimePDX](http://maptimepdx.org)
+- Forest Cost Model (A Project for [Ecotrust's Forest Planner](http://stage.forestplanner.ecotrust.org))
+	- [GitHub](https://github.com/ustroetz/cost_model) | [Presentation](http://ustroetz.github.io/CostModel/brownbag.pptx)
+- Forest Logging Road Model (A Project for [Ecotrust's Forest Planner](http://stage.forestplanner.ecotrust.org))
+	- [GitHub](https://github.com/ustroetz/log-road) | [Presentation](http://ustroetz.github.io/LogRoad)
+- Bike Garage (A Project with MaptimePDX)
+	-[GitHub](https://github.com/ustroetz/log-road) | [Presentation](http://ustroetz.github.io/LogRoad)
 
