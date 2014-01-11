@@ -3,7 +3,7 @@ title: index
 layout: default
 published: true
 ---
-<h1 class="title">Uli Strötz</h1>
+<h1 class="title">ULI STR&#214;TZ</h1>
 <p class="sub-title">A collection of realized projects</p>
 
 <h2 class='title'>[Forest Cost Model](http://ustroetz.github.io/CostModel/brownbag.pptx)</h2>
