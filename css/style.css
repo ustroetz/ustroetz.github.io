@@ -19,7 +19,7 @@ margin: 0 0 10px 0;
 padding: 0;}
 
 
-.post-title a {font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+.post-title a:link {font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 letter-spacing: -0.02em;
 font-weight: 700;
 font-style: normal;
