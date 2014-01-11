@@ -4,9 +4,9 @@ layout: default
 published: true
 ---
 
-# A collection of realized projects
+<p class="sub-title">A collection of realized projects</p>
 
-[Forest Cost Model](http://ustroetz.github.io/CostModel/brownbag.pptx)
+<h2 class='title'>[Forest Cost Model](http://ustroetz.github.io/CostModel/brownbag.pptx)</h2>
 A Project for [Ecotrust's Forest Planner](http://stage.forestplanner.ecotrust.org)).
 [GitHub](https://github.com/ustroetz/cost_model)
 <br/>
