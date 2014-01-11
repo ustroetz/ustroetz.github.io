@@ -13,5 +13,5 @@ published: true
 - Forest Logging Road Model (A Project for [Ecotrust's Forest Planner](http://stage.forestplanner.ecotrust.org))
 	- [GitHub](https://github.com/ustroetz/log-road) | [Presentation](http://ustroetz.github.io/LogRoad)
 - Bike Garage (A Project with MaptimePDX)
-	-[GitHub](https://github.com/ustroetz/log-road) | [Presentation](http://ustroetz.github.io/LogRoad)
+	- [Website](https://github.com/ustroetz/BikeGarage)
 
