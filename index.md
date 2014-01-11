@@ -1,9 +1,14 @@
 ---
 title: index
 layout: default
+published: true
 ---
 
-# Uli Strötz
+# Uli Stroetz
 
 ## This is a collection of realized projects
+
+- Forest Cost Model
+- Forest Logging Road Model
+- Bike Garage
 
