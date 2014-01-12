@@ -11,7 +11,6 @@ published: true
 	<a class='post-title'>@ustroetz</a>
 	<a href="https://github.com/ustroetz">
 	<img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="HTML tutorial" width="35px" height="35px"/></a>
-	</p>
 	</p></br></br></br>
 	<p class='post-text'>GIS developer with a special interest developing fast and efficient geospatial applications with OpenSource software.</p>
 	
