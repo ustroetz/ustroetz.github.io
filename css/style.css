@@ -20,7 +20,6 @@ padding: 0;
 color: #333332;
 }
 
-
 .github {font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
 font-size: 12px;
 font-style: normal;
@@ -55,6 +54,85 @@ padding-left: 14px;
 padding-right: 14px;
 padding-top: 4px;}
 
+.sidebarNav {-webkit-font-smoothing: antialiased;
+border-top-color: #333332;
+border-top-style: solid;
+border-top-width: 1px;
+color: #333332;
+font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+height: 55px;
+letter-spacing: normal;
+line-height: 25px;
+margin-bottom: 0px;
+margin-top: 0px;
+padding-bottom: 0px;
+text-rendering: optimizelegibility;
+visibility: visible;}
+
+.sidebarList {-webkit-font-smoothing: antialiased;
+color: #333332;
+display: block;
+font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+height: 56px;
+letter-spacing: normal;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: -1px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-rendering: optimizelegibility;
+visibility: visible;}
+
+.sidebarListItem {-webkit-font-smoothing: antialiased;
+color: #333332;
+display: inline-block;
+font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+height: 56px;
+letter-spacing: normal;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-right: 20px;
+text-rendering: optimizelegibility;
+visibility: visible;
+width: 98px;}
+
+.sidebarListItemRef {-webkit-font-smoothing: antialiased;
+color: #333332;
+display: block;
+font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: bold;
+height: 15px;
+letter-spacing: 2px;
+line-height: 15px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+padding-bottom: 20px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 20px;
+text-decoration: none;
+text-rendering: optimizelegibility;
+text-transform: uppercase;
+visibility: visible;}
 
 .top {text-align:center;
 		padding-top: 100px;

@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Uli Str&#246;tz</title>
+---
+title: projects
+layout: default
+---
 
-	<link rel='stylesheet' href='/css/style.css' type='text/css' />
-	<div class="top">
-		<h1 class="title">Uli Str&#246;tz</h1>
-		<p class="sub-title">A collection of GIS projects</p>
-		<a class="github" href="http://github.com/ustroetz">GitHub</a>
-	</div>
-	<hr>
-</head>
 <body>
 	
 <div class="post">
@@ -62,5 +54,3 @@
         <p class='post-text'>The Biomass Cost Analyst Tool estimates a price per ton of woody biomass for each inventory stand. It takes into account the stumpage price for each individual stratum, the harvest costs, the reforestation costs, and the transportation costs to a determined location.</p>
         <p class='post-project'>A project for <a href="http://forestry.alaska.gov">DNR Alaska</a>.</p>
 </div>
-</body>
-</html>
