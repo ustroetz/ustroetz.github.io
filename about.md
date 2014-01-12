@@ -1,6 +1,7 @@
 ---
 title: about
 layout: default
+published: true
 ---
 
 <body>
@@ -19,8 +20,5 @@ layout: default
 
 </div>
 <div class="connect">
-
 <a class="resume" href="/Resume/resume_ustroetz.pdf">RESUME</a>
-
 </div>
-
