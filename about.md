@@ -8,7 +8,9 @@ layout: default
 <div class="post">
 	<p>
 	<a class='post-title'>@ustroetz</a>
-	
+	<a href="https://github.com/ustroetzd">
+	<img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="HTML tutorial" width="35px" height="35px"/></a>
+	</p>
 	</p></br></br></br>
 	<p class='post-text'>GIS developer with a special interest developing fast and efficient geospatial applications with OpenSource software.</p>
 	
@@ -17,8 +19,6 @@ layout: default
 
 </div>
 <div class="connect">
-<a href="https://github.com/ustroetz">
-<img class="img-spec" src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="HTML tutorial" width="40px" height="40px"/></a>
 
 <a class="resume" href="/Resume/resume_ustroetz.pdf">RESUME</a>
 
