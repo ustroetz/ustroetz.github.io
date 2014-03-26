@@ -1,108 +1,89 @@
-.title {font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-letter-spacing: -0.02em;
-font-weight: 700;
-font-style: normal;
-font-size: 50px;
-letter-spacing: -0.04em;
-line-height: 1;
-color: #333332;
-margin-bottom: 8px;
-outline: 0;
-word-break: break-word;}
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
 
 
-.buttonYES {font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-font-size: 35px;
-font-style: normal;
-font-weight: normal;
-height: 20px;
-letter-spacing: normal;
-text-align: center;
-line-height: 31px;
-text-decoration:none;
--webkit-background-clip: border-box;
-border-bottom-color: rgb(179, 179, 177);
-border-bottom-left-radius: 11988px;
-border-bottom-right-radius: 11988px;
-border-bottom-style: solid;
-border-bottom-width: 1px;
-border-left-color: rgb(179, 179, 177);
-border-left-style: solid;
-border-left-width: 1px;
-border-right-color: rgb(179, 179, 177);
-border-right-style: solid;
-border-right-width: 1px;
-border-top-color: rgb(179, 179, 177);
-border-top-left-radius: 11988px;
-border-top-right-radius: 11988px;
-border-top-style: solid;
-border-top-width: 1px;
-box-sizing: border-box;
-color: rgb(179, 179, 177);
-width: 91px;
-padding-bottom: 4px;
-padding-left: 14px;
-padding-right: 14px;
-padding-top: 4px;
+#legendTime {
+  position: absolute;
+  top: 180px;
+  left: 13px;
+  width: 360px;
+  padding: 6px 0px 6px 20px;
+
+  z-index:100;
 }
-.buttonNO {font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-font-size: 35px;
-font-style: normal;
-font-weight: normal;
-height: 20px;
-letter-spacing: normal;
-text-align: center;
-line-height: 31px;
-text-decoration:none;
--webkit-background-clip: border-box;
-border-bottom-color: rgb(179, 179, 177);
-border-bottom-left-radius: 11988px;
-border-bottom-right-radius: 11988px;
-border-bottom-style: solid;
-border-bottom-width: 1px;
-border-left-color: rgb(179, 179, 177);
-border-left-style: solid;
-border-left-width: 1px;
-border-right-color: rgb(179, 179, 177);
-border-right-style: solid;
-border-right-width: 1px;
-border-top-color: rgb(179, 179, 177);
-border-top-left-radius: 11988px;
-border-top-right-radius: 11988px;
-border-top-style: solid;
-border-top-width: 1px;
-box-sizing: border-box;
-color: rgb(179, 179, 177);
-width: 91px;
-padding-bottom: 4px;
-padding-left: 14px;
-padding-right: 14px;
-padding-top: 4px;
+
+
+ul.legendTime {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 30px;
+  color: '#777';
+}
+
+ul.legendTime li {
+    line-height: 22px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 22px;
+    line-height: 22px
+  }
+
+
+
+.legend .circle {  
+  border-radius: 50%;
+  color: #555;
+  width: 14px;
+  height: 14px;
+
+}
+
+
+.legend i {
+    float: left;
+    margin-right: 8px;
+    margin-top: 4px;
+    opacity: 0.7;
+}
+
+
+.legendPoints {
+    position: relative;
+    top: 280px;
+    left: 3px;
+    width: 300px;
+    padding: 6px 0px 10px 20px;
+    font: 14px Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    color: #222;
+}
+
+
+#legend {
+  position: absolute;
+  top: 70px;
+  left: 13px;
+  width: 335px;
+  height: 430px;
+  padding: 20px 5px 5px 20px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  font: 14px Arial, Helvetica, sans-serif;
+  color: #555;
+  z-index:100;
+  color: #777;
+  line-height: 20px;
 }
 
 
 
-
-.top {text-align:center;
-		padding-top: 30px;
-		padding-bottom:30px;}
-
-
-
-h1 {font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-letter-spacing: -0.02em;
-font-weight: normal;
-font-style: normal;
-font-size: 30px;
-letter-spacing: -0.04em;
-line-height: 1;
-color: #333332;
-margin-top: 50px;
-margin-bottom: 70px;
-outline: 0;
-word-break: break-word;}
-
-body {margin:auto;
-	width:600px;
-	padding-bottom: 100px;
-text-align:center;}
+#range {
+  width: 100%;
+  position: absolute;
+}
+.leaflet-top .leaflet-control-zoom {
+  margin-top: 20px;
+}
