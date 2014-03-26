@@ -14,7 +14,7 @@ body { margin:0; padding:0; }
 
 
 ul.legendTime {
-  margin: 0;
+  margin: 5px 0px 10px 0px;
   padding: 0;
   list-style-type: none;
   line-height: 30px;
@@ -27,7 +27,8 @@ ul.legendTime li {
     padding: 0;
     font: 14px Arial, Helvetica, sans-serif;
     height: 22px;
-    line-height: 22px
+    line-height: 22px;
+    color: #222;;
   }
 
 
@@ -51,7 +52,7 @@ ul.legendTime li {
 
 .legendPoints {
     position: relative;
-    top: 280px;
+    top: 470px;
     left: 3px;
     width: 300px;
     padding: 6px 0px 10px 20px;
@@ -63,16 +64,15 @@ ul.legendTime li {
 
 #legend {
   position: absolute;
-  top: 70px;
+  top: 100px;
   left: 13px;
   width: 335px;
-  height: 430px;
+  height: 600px;
   padding: 20px 5px 5px 20px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: #fff;
   font: 14px Arial, Helvetica, sans-serif;
-  color: #555;
   z-index:100;
   color: #777;
   line-height: 20px;
@@ -87,3 +87,18 @@ ul.legendTime li {
 .leaflet-top .leaflet-control-zoom {
   margin-top: 20px;
 }
+
+
+p {
+  margin: 0;
+  font: 14px Arial, Helvetica, sans-serif;
+  color: #777;
+}
+
+
+h4 {
+  margin: 0px 0px 10px 0px;
+}
+
+
+
