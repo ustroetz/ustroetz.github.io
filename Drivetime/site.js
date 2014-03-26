@@ -47,41 +47,82 @@ var geoJsonSchools = {
   self.setupWMSLegend = function() {
 
     legend = document.getElementById('legend');
-    legend.innerHTML = 'Ankomst kl. 10 fredag den 21. marts 2014 <br>  %-tal vist efter transporttid er udregnet på grundlag <br> af alle 15-19 årige bosiddende i Vesthimmerland';
+    var item = document.createElement("h4");
+        item.appendChild(document.createTextNode("Oplandsanalyser med offentlig transport og bil"));
+        legend.appendChild(item);
+
+    var item = document.createElement("p");
+        item.appendChild(document.createTextNode("Afgang fra Odense banegård kl. 12 26/3-2014."));
+        legend.appendChild(item);
+
+    var item = document.createElement("br");
+        legend.appendChild(item);    
+
+    var item = document.createElement("p");
+        item.appendChild(document.createTextNode("Transporttid med bill"));
+        legend.appendChild(item);
+
+    var legendTime = document.createElement("ul");
+        legendTime.className = 'legendTime';
+        legendTime.style.background = "url('http://drivetime.mapicture.com:8080/geoserver/mapicture/wms?version=1.0.0&request=GetLegendGraphic&layer=mapicture:traveltime_car&style=dt6int_car&format=image/png&width=22&height=22&legend_options=fontColor:0xFFFFFF') no-repeat";
+
+    var item1 = document.createElement("li");
+        item1.appendChild(document.createTextNode("10 min."));
+        legendTime.appendChild(item1);
+    var item2 = document.createElement("li");
+        item2.appendChild(document.createTextNode("20 min."));
+        legendTime.appendChild(item2);
+    var item3 = document.createElement("li");
+        item3.appendChild(document.createTextNode("30 min. "));
+        legendTime.appendChild(item3);
+    var item4 = document.createElement("li");
+        item4.appendChild(document.createTextNode("40 min."));
+        legendTime.appendChild(item4);
+    var item5 = document.createElement("li");
+        item5.appendChild(document.createTextNode("50 min."));
+        legendTime.appendChild(item5);
+    var item6 = document.createElement("li");
+        item6.appendChild(document.createTextNode("60 min."));
+        legendTime.appendChild(item6);
+    var item7 = document.createElement("li");
+        item7.appendChild(document.createTextNode("> 60 min."));
+        legendTime.appendChild(item7);
+    
+        legend.appendChild(legendTime);
+
+
 
     var item = document.createElement("p");
         item.appendChild(document.createTextNode("Transporttid med offentlig transport"));
         legend.appendChild(item);
 
+    var legendTime = document.createElement("ul");
+        legendTime.className = 'legendTime';
+        legendTime.style.background = "url('http://drivetime.mapicture.com:8080/geoserver/mapicture/wms?version=1.0.0&request=GetLegendGraphic&layer=mapicture:traveltime&style=dt6int&format=image/png&width=22&height=22&legend_options=fontColor:0xFFFFFF') no-repeat";
 
-
-    var legendTime = $('ul.legendTime')[0];
-
-    if (legendTime) {
-
-      var item1 = document.createElement("li");
-      item1.appendChild(document.createTextNode("10 min. - 13 %"));
-      legendTime.appendChild(item1);
-      var item2 = document.createElement("li");
-      item2.appendChild(document.createTextNode("20 min. -  \u00A0 9 %"));
-      legendTime.appendChild(item2);
-      var item3 = document.createElement("li");
-      item3.appendChild(document.createTextNode("30 min. - 16 %"));
-      legendTime.appendChild(item3);
-      var item4 = document.createElement("li");
-      item4.appendChild(document.createTextNode("40 min. - 15 %"));
-      legendTime.appendChild(item4);
-      var item5 = document.createElement("li");
-      item5.appendChild(document.createTextNode("50 min. - 15 %"));
-      legendTime.appendChild(item5);
-      var item6 = document.createElement("li");
-      item6.appendChild(document.createTextNode("60 min. - 14 %"));
-      legendTime.appendChild(item6);
-      var item7 = document.createElement("li");
-      item7.appendChild(document.createTextNode("> 60 min. - 19 %"));
-      legendTime.appendChild(item7);
-      legendTime.style.background = "url('http://drivetime.mapicture.com:8080/geoserver/mapicture/wms?version=1.0.0&request=GetLegendGraphic&layer=mapicture:traveltime&style=dt4int&format=image/png&width=22&height=22&legend_options=fontColor:0xFFFFFF') no-repeat";
-  };
+    var item1 = document.createElement("li");
+        item1.appendChild(document.createTextNode("10 min."));
+        legendTime.appendChild(item1);
+    var item2 = document.createElement("li");
+        item2.appendChild(document.createTextNode("20 min."));
+        legendTime.appendChild(item2);
+    var item3 = document.createElement("li");
+        item3.appendChild(document.createTextNode("30 min. "));
+        legendTime.appendChild(item3);
+    var item4 = document.createElement("li");
+        item4.appendChild(document.createTextNode("40 min."));
+        legendTime.appendChild(item4);
+    var item5 = document.createElement("li");
+        item5.appendChild(document.createTextNode("50 min."));
+        legendTime.appendChild(item5);
+    var item6 = document.createElement("li");
+        item6.appendChild(document.createTextNode("60 min."));
+        legendTime.appendChild(item6);
+    var item7 = document.createElement("li");
+        item7.appendChild(document.createTextNode("> 60 min."));
+        legendTime.appendChild(item7);
+    
+        legend.appendChild(legendTime);
 };
 
 
@@ -171,21 +212,21 @@ var geoJsonSchools = {
   self.drivetimePublic = new L.TileLayer.WMS('http://drivetime.mapicture.com:8080/geoserver/mapicture/wms', {
     layers: 'mapicture:traveltime',
     format: 'image/png',
-    styles: 'dt4int',
+    styles: 'dt6int_car',
     transparent: true,
     opacity: 1,
     viewparams: 'ids:139340368970352/139340398999911/139340432772555',
     env: self.formatIntervalsForTileLayer(intervals)
   });
 
-  self.drivetimeCar = new L.TileLayer.WMS("http://localhost:8000/geoserver/Mapicture/wms", {
-    layers: 'Mapicture:traveltime',
+  self.drivetimeCar = new L.TileLayer.WMS('http://drivetime.mapicture.com:8080/geoserver/mapicture/wms', {
+    layers: 'mapicture:traveltime_car',
     format: 'image/png',
-    styles: 'dt' + 6 + 'int',
+    styles: 'dt6int_car',
     transparent: true,
     opacity: 1,
-    viewparams: 'ids:139472211819000',     
-    env: self.formatIntervalsForTileLayer([600,1200,1800,2400,3000,3600])
+    viewparams: 'ids:139582084385634',     
+    env: self.formatIntervalsForTileLayer([10,20,30,40,60,80])
   });
 
   self.stops = new L.TileLayer.WMS('http://drivetime.mapicture.com:8080/geoserver/mapicture/wms', {
