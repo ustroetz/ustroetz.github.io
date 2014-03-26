@@ -178,7 +178,7 @@ var geoJsonSchools = {
     env: self.formatIntervalsForTileLayer(intervals)
   });
 
-  self.drivetimeCar = new L.TileLayer.WMS("http://localhost:8000/geoserver/Mapicture/wms", {
+  self.drivetimeCar = new L.TileLayer.WMS("http://localhost:800/geoserver/Mapicture/wms", {
     layers: 'Mapicture:traveltime',
     format: 'image/png',
     styles: 'dt' + 6 + 'int',
