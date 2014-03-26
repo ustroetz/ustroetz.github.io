@@ -11,7 +11,7 @@ var geoJsonSchools = {
 "type": "FeatureCollection",
                                                                                 
 "features": [
-{ "type": "Feature", "properties": { "id": 1, "category": "Rail Station", "Category": "bla", "utm_y": 6140318.029927980154753 }, "geometry": { "type": "Point", "coordinates": [ 10.38781500000022, 55.40123399999932 ] } }
+{ "type": "Feature", "properties": { "id": 1, "category": "Rail Station", "Category": "Odense banegård", "Name": "Odense banegård" }, "geometry": { "type": "Point", "coordinates": [ 10.38781500000022, 55.40123399999932 ] } }
 
 ]
 }
@@ -178,7 +178,7 @@ var geoJsonSchools = {
     env: self.formatIntervalsForTileLayer(intervals)
   });
 
-  self.drivetimeCar = new L.TileLayer.WMS("http://localhost:800/geoserver/Mapicture/wms", {
+  self.drivetimeCar = new L.TileLayer.WMS("http://localhost:8000/geoserver/Mapicture/wms", {
     layers: 'Mapicture:traveltime',
     format: 'image/png',
     styles: 'dt' + 6 + 'int',
