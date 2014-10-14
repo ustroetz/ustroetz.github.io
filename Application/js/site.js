@@ -2,6 +2,7 @@
 var main = function() {
   loadMap();
   addData();
+  initMarkerLoop();
 
 
 var bioBottom = $('#bio').offset().top + $('#bio').height() +28;

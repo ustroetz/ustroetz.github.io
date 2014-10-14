@@ -4,20 +4,8 @@ var bio= {
     {
       "type": "Feature",
       "properties": {
-        "title": "Home"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.413587808609009,
-          52.503582377097615
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "HNE Eberswalde"
+        "name": "HNE Eberswalde",
+        "type": "expierence"
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +18,8 @@ var bio= {
     {
       "type": "Feature",
       "properties": {
-        "title": "Mapicture"
+        "name": "Mapicture",
+        "type": "expierence"
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +32,8 @@ var bio= {
     {
       "type": "Feature",
       "properties": {
-        "title": "Ecotrust"
+        "name": "Ecotrust",
+        "type": "expierence"
       },
       "geometry": {
         "type": "Point",
@@ -56,7 +46,8 @@ var bio= {
     {
       "type": "Feature",
       "properties": {
-        "title": "DNR Alaska"
+        "name": "DNR Alaska",
+        "type": "expierence"
       },
       "geometry": {
         "type": "Point",
@@ -69,7 +60,8 @@ var bio= {
     {
       "type": "Feature",
       "properties": {
-        "title": "University Salzburg"
+        "name": "University Salzburg",
+        "type": "education"
       },
       "geometry": {
         "type": "Point",
