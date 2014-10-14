@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <!-- Title -->
+  <title>Hello Mapbox</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style//bootstrap.css">
+  <link rel="stylesheet" href="style/bootstrap-social.css">
+  <link rel="stylesheet" href="style/font-awesome.css">
+  <link rel="stylesheet" rel="style/font-awesome.min.css">
+
+
+
+  <link rel="stylesheet" href="style/main.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+
+	<script src="data/bio.geojson" type="text/javascript"></script>
+
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top" role="navigation">
+    <ul class="pull-right">
+      <li><a id="navbar-left" href="#home">Home</a>
+      </li>
+      <li><a id="navbar-left" href="#bio">About Me</a>
+      </li>
+      <li><a id="navbar-left" href="#examples">Work Samples</a>
+      </li>
+      <li><a id="navbar-left" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="container vertical-center" id="home">
+    <div class="limiter">
+        <h2>I am GIS Developer with a background in Natural Resources and love to build fast and efficient Open Source applications.</h2>
+    </div>
+  </div>
+
+
+  <div class="container" id="bio">
+    <div class="limiter">
+      <h2>About Me</h2>
+
+      <div class="row">
+        <div class="col-md-7">
+          <div id="map"></div>
+        </div>
+        <div class="col-md-5 explain-text-right">
+        <p>I live in Berlin and have a BSc in Forest Ecosystem Managment and a MSc in GIS. I did GIS internships for the Non-Profit Ecotrust (Portland) and for DNR Alaska. I worked for the geospatial Startup Mapicture in Berlin.</p>
+        <p class="informer">&#8594; Click the Popups to learn more</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container" id="examples">
+    <div class="limiter">
+      <h2>Work Samples</h2>
+      <div class="row">
+        <div class="col-md-5 explain-text-left">
+          <p>You are seeing MapBox Satellite together with OSM streets. As you can see roads are missing. I created a model that figures out where these roads are.
+            <p/>
+            <p class="informer">&#8594; Check out the code on <a href="https://github.com/ustroetz/log-road">GitHub</a></p>
+
+        </div>
+        <div id="carousel" class="col-md-7">
+          <img src="images/log-road.gif">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container" id="contact">
+    <div class="limiter">
+
+      <div class="row">
+        <h2>Contact me!</h2>
+        <div class="row" id="contact-container">
+          <div class="col-md-2"></div>
+          <div class="col-md-3">
+            <div id="astronaut-container">
+              <img id="astronaut" src="images/astronaut.png">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div id="email-box">
+
+              <textarea class="form-control" rows="7">
+                Dear Uli, We want to hire you. Regards, MapBox
+              </textarea>
+              <button type="submit" id="send-email" class="btn btn-default">Send Email</button>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <div class="links">
+          <a href="data/Resume.pdf">
+            <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o">&nbsp; Resume</i>
+            </button>
+          </a>
+          <a href="https://github.com/ustroetz">
+            <button type="button" class="btn btn-default"><i class="fa fa-github">&nbsp; GitHub</i>
+            </button>
+          </a>
+          <a href="https://twitter.com/ustroetz">
+            <button type="button" class="btn btn-default"><i class="fa fa-twitter">&nbsp; Twitter</i>
+            </button>
+          </a>
+          <a href="http://hdyc.neis-one.org/?ustroetz">
+            <button type="button" class="btn btn-default"><i class="fa fa-map-marker">&nbsp; OSM</i>
+            </button>
+          </a>
+          <a href="http://gis.stackexchange.com/users/15607/ustroetz">
+            <button type="button" class="btn btn-default"><i class="fa fa-stack-exchange">&nbsp; StackExchange</i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src='js/map.js'></script>
+    <script src='js/site.js'></script>
+
+</body>
+
+</html>

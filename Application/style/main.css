@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F9F8;
+}
+
+
+h2 {
+  font-size: 30px;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-weight: 600;
+  line-height: 40px
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal
+}
+
+.container a {
+  text-decoration:underline
+}
+
+
+.navbar, .limiter {
+  width: 83.3333%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.navbar {
+  margin-top: 25px;
+}
+
+.navbar a {
+  color: #F7F9F8;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 14px 10px;
+}
+
+
+
+
+.navbar li {
+  display: inline;
+}
+
+
+.row {
+  max-width: 1000px;
+  margin: 0px;
+  padding-top: 5vh
+}
+
+
+.container {
+  width: 100%;
+  margin: 0px
+}
+
+
+
+.col-md-6, .col-md-7, .col-md-4 {
+  padding: 0px
+}
+
+.explain-text-left, .explain-text-right {
+  padding-top: 10vh;
+}
+.explain-text-left {
+padding-right: 10vh;
+padding-left: 0px
+}
+
+.explain-text-right {
+padding-left: 10vh;
+padding-right: 0px
+}
+
+.container{
+  position: relative;
+  padding-top:60px;
+  height: 100vh
+}
+
+#home {
+  color:#F7F9F8;
+  background-color: #893a29
+}
+
+#bio {
+  color:#F7F9F8;
+  background-color: #D9A135
+}
+
+#examples {
+  color:#893a29;
+  background-color: #FFFADA
+}
+
+#examples a {
+  color:#893a29;
+}
+
+#contact {
+  color:#F7F9F8;
+  background-color: #893a29
+}
+
+#map {
+  width:100%;
+  height:60vh;
+  }
+
+#email-box {
+margin-top: 20px;
+margin-left: 20px;
+}
+
+#send-email {
+  margin-top: 5px
+}
+
+.links {
+  width: 700px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links .btn {
+  width: 135px
+}
+
+#astronaut {
+  width: 100%
+}
+
+#astronaut-container {
+  border-radius: 50%;
+  background-color: #242B31;
+  width: 100%;
+  overflow:hidden;
+}
+
+#contact-container {
+  margin-top: 50px
+}
+
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0px
+}
+
+.informer {
+  font-weight: bold;
+  font-size: 15px
+}

@@ -1,0 +1,125 @@
+var bio= {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Home"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.413587808609009,
+          52.503582377097615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "HNE Eberswalde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.817678689956665,
+          52.833106391426625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mapicture"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.390896320343018,
+          52.52763514792116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ecotrust"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.68058717250823,
+          45.52825703161522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "DNR Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.81065940856934,
+          64.83715210030961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "University Salzburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.060448169708252,
+          47.78837797370796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DH-Wasy",
+        "type": "expierence"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.537505865097046,
+          52.430039996769395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University Girona",
+        "type": "education"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.828131914138794,
+          41.98556534313122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University Eberswalde",
+        "type": "expierence"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.809363842010498,
+          52.82423851287664
+        ]
+      }
+    }
+  ]
+}

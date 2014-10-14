@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Moon Flower";
+    color: #F7F9F8;
+}
+
+
+.col-md-6 {
+  padding: 0px
+}
+
+.jumbotron {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),url('../images/starter3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  padding: 0px
+}
+
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top:10%
+}
+
+.jumbotron p {
+  font-size: 30px;
+}
+
+.row {
+  height: 100vh
+}
+
+#starter {
+  position: relative;
+  left: 13%;
+  width: 70%;
+}
+
+#starter p {
+margin-left: 20px;
+margin-top: 55px;
+max-width: 53%
+}
+
+#starter .btn {
+  background-color: transparent;
+  margin-left: 140px;
+  font-size: 25px;
+  font-weight: bold;
+  color:  #F7F9F8;
+}
+
+#starter .btn:hover {
+  color: #242B31;
+  background-color: #F7F9F8
+}
