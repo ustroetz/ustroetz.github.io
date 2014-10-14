@@ -230,4 +230,7 @@ margin-left: 20px;
 
 .leaflet-popup-content {
   min-width: 280px !important;
+  overflow: scroll;
+  max-height: 130px;
+  padding-bottom: 10px !important;
 }

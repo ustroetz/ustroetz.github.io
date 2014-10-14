@@ -12,7 +12,11 @@ function onEachFeature(feature, layer) {
   else if (type == "home") {
     var popupContent = "<div><h3>" + feature.properties.name + "</h3></div>"
   }
-    layer.bindPopup(popupContent);
+    layer.bindPopup(popupContent, {
+      closeButton: false,
+      autoPanPadding: new L.Point(75, 100)
+
+    });
 };
 
 map = L.mapbox.map('map', 'uli.i535bj4f', {
