@@ -1,11 +1,28 @@
 var bio= {
   "type": "FeatureCollection",
   "features": [
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Home",
+      "type": "home"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.413587808609009,
+          52.503582377097615
+      ]
+    }
+  },
     {
       "type": "Feature",
       "properties": {
-        "name": "HNE Eberswalde",
-        "type": "expierence"
+        "name": "University Eberswalde",
+        "website":"www.hnee.de/en/",
+        "time": "2008-2012",
+        "type": "education",
+        "degree": "Forest Ecosystem Management (B.Sc.)"
       },
       "geometry": {
         "type": "Point",
@@ -19,7 +36,11 @@ var bio= {
       "type": "Feature",
       "properties": {
         "name": "Mapicture",
-        "type": "expierence"
+        "type": "expierence",
+        "website":"www.mapicture.dk/de/",
+        "time": "2014",
+        "description": "Setting up a OSM tile server and GeoServers including server maintenance. Development of various web map visualizations including input user interfaces. Process automatization and development of a print composer that enables high resolution web map tile printing out of the browser.",
+        "skills": "Python (GDAL/GeoScript/Mapnik), JavaScript (Leaflet/jQuery), PostgresSQL (PostGIS), GeoServer(gsconfig), TileMill, Mapnik"
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +54,11 @@ var bio= {
       "type": "Feature",
       "properties": {
         "name": "Ecotrust",
-        "type": "expierence"
+        "website": "www.ecotrust.org",
+        "time": "2013-2014",
+        "type": "expierence",
+        "description": "Development of a timber harvest cost model and a road model, for Ecotrust’s Forestry Scenerio Planner. The cost model estimates timber harvest costs for a given forest stand. The road model models potential logging roads based on existing OpenStreetMap data and factors like slope, stand density, etc.",
+        "skills": "Python, GDAL, Grass Script, OSM API, OSRM API, QGIS"
       },
       "geometry": {
         "type": "Point",
@@ -46,8 +71,48 @@ var bio= {
     {
       "type": "Feature",
       "properties": {
+        "name": "DHI-Wasy",
+        "website": "http://www.dhigroup.com/",
+        "time": "2012",
+        "type": "expierence",
+        "description": "Extracting and modifying OpenStreetMap data for use in DHI's GeoFES (decision support for disaster management). General data processing, analyzing, and visualization.",
+        "skills": "OSM, Osmosis, QGIS, FME, ArcMap, Python, ArcPy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.537505865097046,
+          52.430039996769395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University Eberswalde",
+        "website":"www.hnee.de/en/",
+        "time": "2011",
+        "type": "expierence",
+        "description": "Digitizing of power lines in Germany. Collecting various GIS data regarding biomass for renewable energy production and visualization of the data in a web map.",
+        "skills": "OSM, ArcMap, ArcGIS Online"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.809363842010498,
+          52.82423851287664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "DNR Alaska",
-        "type": "expierence"
+        "website":"dnr.alaska.gov",
+        "time": "2010-2011",
+        "type": "expierence",
+        "description": "Various GPS data collection and map production. Development of a tool for the ArcGIS Toolbox that estimates biomass harvest costs.",
+        "skills": "ArcMap, ModelBuilder, Python, Trimble & Garmin GPS"
       },
       "geometry": {
         "type": "Point",
@@ -61,7 +126,10 @@ var bio= {
       "type": "Feature",
       "properties": {
         "name": "University Salzburg",
-        "type": "education"
+        "website":"www.unigis.ac.at",
+        "time": "2012-2014",
+        "type": "education",
+        "degree": "Geographical Information Science & Systems (M.Sc.)"
       },
       "geometry": {
         "type": "Point",
@@ -71,25 +139,15 @@ var bio= {
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "DH-Wasy",
-        "type": "expierence"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.537505865097046,
-          52.430039996769395
-        ]
-      }
-    },
+
     {
       "type": "Feature",
       "properties": {
         "name": "University Girona",
-        "type": "education"
+        "website":"www.sigte.udg.edu/summerschool2012/",
+        "time": "2013",
+        "type": "education",
+        "degree": "Open Web Map Services and Web Mapping Summer School"
       },
       "geometry": {
         "type": "Point",
@@ -99,19 +157,6 @@ var bio= {
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "University Eberswalde",
-        "type": "expierence"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.809363842010498,
-          52.82423851287664
-        ]
-      }
-    }
+
   ]
 }

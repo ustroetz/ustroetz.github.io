@@ -1,7 +1,7 @@
 
 var main = function() {
-  loadMap();
-  addData();
+  // loadMap();
+  // addData();
   initMarkerLoop();
 
 

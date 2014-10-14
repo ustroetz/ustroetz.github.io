@@ -208,3 +208,18 @@ margin-left: 20px;
   font-weight: bold;
   font-size: 15px
 }
+
+
+.popupHeading {
+  display: inline
+}
+
+.leaflet-container p, .leaflet-container h3, .leaflet-container a {
+  font-size: 12px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #242B31 !important;
+}
+
+.leaflet-container h3 {
+  font-weight: bold !important;
+}
