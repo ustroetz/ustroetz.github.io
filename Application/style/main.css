@@ -214,6 +214,10 @@ margin-left: 20px;
   display: inline
 }
 
+.extented-popup {
+  display:none
+}
+
 .leaflet-container p, .leaflet-container h3, .leaflet-container a {
   font-size: 12px !important;
   font-family: 'Open Sans', sans-serif !important;
@@ -222,4 +226,8 @@ margin-left: 20px;
 
 .leaflet-container h3 {
   font-weight: bold !important;
+}
+
+.leaflet-popup-content {
+  min-width: 280px !important;
 }
