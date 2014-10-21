@@ -5,6 +5,7 @@ var main = function() {
   initMarkerLoop();
 
 
+// change color nav on scroll
 var bioBottom = $('#bio').offset().top + $('#bio').height() +28;
 var examplesBottom = $('#examples').offset().top + $('#examples').height()+28;
 
@@ -27,10 +28,18 @@ $( "#send-email" ).click(function() {
   console.log(emailContent);
 });
 
-};
+
+
+// // slides
+//    $('.arrow-next').click( function(){
+//     var currentSlide = $('.active-slide');
+//     var nextSlide = currentSlide.next();
+//
 
 
 
+
+// smooth scroll
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
@@ -43,7 +52,7 @@ $( "#send-email" ).click(function() {
           window.location.hash = target;
       });
   });
-
+};
 
 
 

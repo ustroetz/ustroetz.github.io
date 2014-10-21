@@ -12,20 +12,20 @@ function onEachFeature(feature, layer) {
   else if (type == "home") {
     var popupContent = "<div><h3>" + feature.properties.name + "</h3></div>"
   }
-    layer.bindPopup(popupContent, {
-      closeButton: false,
-      autoPanPadding: new L.Point(75, 100)
+  layer.bindPopup(popupContent, {
+    closeButton: false,
+    autoPanPadding: new L.Point(75, 100)
 
-    });
+  });
 };
 
 map = L.mapbox.map('map', 'uli.i535bj4f', {
-    zoomControl: false
-  }).setView([52.526666,13.396454], 5);
+  zoomControl: false
+}).setView([52.526666,13.396454], 3);
 
 var bioMarkerLayer = L.geoJson(bio, {
-     onEachFeature: onEachFeature
- });
+  onEachFeature: onEachFeature
+});
 
 
 
@@ -35,42 +35,45 @@ bioMarkerLayer.eachLayer(function(marker) {
     $( ".extented-popup" ).show();
   });
   marker.setIcon(L.mapbox.marker.icon({
-          'marker-color': '#242B31'
-    }));
+    'marker-color': '#242B31'
+  }));
 }).addTo(map);
 
 
 var initMarkerLoop = function () {
-// Open popup when user mouses over a marker
-map.featureLayer.on('ready', function(e) {
+  // Open popup when user mouses over a marker
+  map.featureLayer.on('ready', function(e) {
     var markers = [];
     bioMarkerLayer.eachLayer(function(marker) { markers.push(marker); });
     cycle(markers);
 
-    map.on('click', function() {
+    map.on('mousedown', function() {
       mapInteraction = true;
+      console.log("stop")
     });
-});
+  });
 
-var mapInteraction = false;
+  var mapInteraction = false;
 
 
-function cycle(markers) {
+  function cycle(markers) {
     var i = 0;
     var run = function (e) {
       if (!mapInteraction){
-      var countMarkers = markers.length;
+        var countMarkers = markers.length;
         if (++i > countMarkers - 1) i = 0;
+
+
         map.panTo(markers[i].getLatLng(), {
           animate: true,
-          duration: 2.0,
+          duration: 1,
           easeLinearity: 0.1,
-           });
+        });
         markers[i].openPopup();
-        window.setTimeout(run, 5000);
-};
-  };
+        window.setTimeout(run, 2000);
+      };
+    };
     run();
 
-};
+  };
 };
