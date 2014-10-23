@@ -33,7 +33,7 @@ $( "#send-email" ).click(function() {
 // slides
 	$('.example-slider').slick({
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     arrows: false,
     centerPadding: '0',
     dots: true,
