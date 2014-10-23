@@ -31,37 +31,14 @@ $( "#send-email" ).click(function() {
 
 
 // slides
-    $('#example-one-nav').click( function(){
-      $('#example-one-nav').addClass( 'example-nav-active');
-      $('#example-two-nav').removeClass( 'example-nav-active');
-      $('#example-three-nav').removeClass( 'example-nav-active');
-
-      $('#example-one').addClass( 'example-active' );
-      $('#example-two').removeClass( 'example-active' );
-      $('#example-three').removeClass( 'example-active' );
-    });
-
-    $('#example-two-nav').click( function(){
-      $('#example-two-nav').addClass( 'example-nav-active');
-      $('#example-one-nav').removeClass( 'example-nav-active');
-      $('#example-three-nav').removeClass( 'example-nav-active');
-
-      $('#example-two').addClass( 'example-active' );
-      $('#example-one').removeClass( 'example-active' );
-      $('#example-three').removeClass( 'example-active' );
-    });
-
-    $('#example-three-nav').click( function(){
-      $('#example-three-nav').addClass( 'example-nav-active');
-      $('#example-one-nav').removeClass( 'example-nav-active');
-      $('#example-two-nav').removeClass( 'example-nav-active');
-
-      $('#example-three').addClass( 'example-active' );
-      $('#example-one').removeClass( 'example-active' );
-      $('#example-two').removeClass( 'example-active' );
-    });
-
-
+	$('.example-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    centerPadding: '0',
+    dots: true,
+    fade: true
+  	});
 
 
 
